@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    user-select: none;
+}
+
+main {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+
+#navbar {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 2.5rem;
+}
+
+.logo {
+    width: 70px;
+}
+
+#navbar li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+#navbar ul li a:hover {
+    border-bottom: 2px black solid;
+}
+
+/* Hero */
+
+#hero {
+    height: 70vh;
+    background-color: black;
+    margin-top: 50px;
+    position: relative;
+    filter: grayscale(1);
+    transition: 0.5s;
+}
+
+.first-bg {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    filter: blur(2px);
+}
+
+.hero-img img {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 50px;
+    transition: 0.5s;
+    height: 100%;
+    width: 500px;
+    object-fit: cover;
+}
+
+#hero:hover {
+    filter: grayscale(0);
+}
+
+.hero-img {
+    width: 50%;
+}
+
+.hero-text {
+    position: absolute;
+    z-index: 1;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    height: 100%;
+    padding: 0 5rem;
+    color: white;
+}
+
+/* Clients Section */
+
+#our-clients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 600px;
+}
+
+.clients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1000px;
+}
+
+.client-class {
+    margin: 0px 50px;
+    position: relative;
+    filter: grayscale(1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.client-class:hover {
+    filter: grayscale(0);
+}
+
+.client-class h1 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    text-transform: uppercase;
+}
+
+.clients-header .line {
+    margin-bottom: 2px;
+}
+
+.client {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* Lastest Projects */
+
+.project {
+    height: 70vh;
+    margin: 20px 0;
+    display: flex;
+    border-radius: 70px;
+}
+
+.project-image {
+    width: 50%;
+    height: 100%;
+    border-radius: 0 70px 70px 0;
+}
+
+.project-info {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 70px;
+    opacity: 0.8;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.project-image img {
+    height: 100%;
+    border-radius: 0 70px 70px 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+#projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;    
+    flex-direction: column;
+}
+
+.project-info:hover {
+    opacity: 1;
+}
+
+/* Leaders Section */
+
+.leaders {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.leader-class {
+    width: 370px;
+    margin: 0px 50px;
+    height: auto;
+    position: relative;
+    transition: 0.5s;
+    filter: grayscale(1);
+    cursor: pointer;
+}
+
+.leader {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.leader-class:hover {
+    filter: grayscale(0);
+}
+
+.leader-class h1 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-28%);
+    width: 100%;
+    z-index: 1;
+    color: white;
+}
+
+.label-text {
+    padding: 0 250px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+/* Footer Section */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    color: white;
+    background-color: black;
+    margin-top: 100px;
+    padding: 0 150px;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+footer a {
+    color: white;
+}
+
+/* Responsive Design */
+
+@media (max-width: 912px) {
+
+        /* Navbar Section */
+
+    #navbar {
+        flex-direction: column;
+        padding-bottom: 120px;
+    }
+
+    #navbar li {
+        margin: 12px 0;
+    }
+
+    /* Hero Section */
+
+    #our-clients {
+        height: 100vh;
+    }
+
+    .hero-img img {
+        display: none;
+    }
+
+    .hero-text {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    /* Clients Section */
+
+    .clients {
+        flex-direction: column;
+        width: 300px;
+        margin-top: 20px;
+    }
+
+    .client-class {
+        filter: grayscale(0);
+    }
+
+    .client-class h1 {
+        font-size: 15px;
+    }
+
+    .client {
+        padding: 5px 0;
+        border-radius: 50px;
+    }
+
+    /* Projects Section */
+
+    .project {
+        flex-direction: column;
+        border-radius: 0;
+        height: 100%;
+        position: relative;
+    }
+
+    .project-info, .project-image {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+
+    .project-info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        opacity: 1;
+    }
+
+    .project-image img{
+        object-fit: cover;
+        width: 100%;
+        height: 50%;
+        border-radius: 0;
+        z-index: 1;
+        filter: blur(2px);
+        opacity: 0.5;
+    }
+
+    /* Leaders Section */
+
+    .leaders {
+        flex-direction: column; 
+    }
+
+    .leader-class {
+        width: 300px;
+        margin: 20px 0;
+        filter: grayscale(0);
+    }
+
+    .leader-class h1 {
+        left: 55%;
+        font-size: 20px;
+    }
+
+    .label-text {
+        padding: 0 50px;
+    }
+
+
+    /* Footer Section */
+
+    footer {
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    footer ul li {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer ul {
+        margin-top: 28px;
+    }
+
+    .number {
+        display: none;
+    }
+}

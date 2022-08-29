@@ -1,0 +1,80 @@
+.btnmain {
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: black;
+    border: solid 1px transparent;
+    transition: 0.3s;
+}
+
+.btnmain:hover {
+    background-color: white;
+    color: black;
+    border: solid 1px black;
+}
+
+.usedbtn-white {
+    background-color: white;
+    padding: 1rem;
+    width: 10rem;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s;
+}
+
+.usedbtn-white:hover {
+    background-color: black;
+    color: white;
+}
+
+.dark {
+
+}
+
+.light {
+
+}
+
+h1 {
+    font-weight: 800;
+}
+
+p {
+    line-height: 1.4rem;
+    margin: 1.5rem 0;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 0.8rem;
+}
+
+.bg-black {
+    background-color: black;
+    color: white;
+}
+
+.line {
+    background-color: black;
+    height: 1px;
+    width: 150px;
+    margin-bottom: 40px;
+}
+
+.h1-main {
+
+text-transform: uppercase;
+margin-top: 70px;
+
+}
+
+.main-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
